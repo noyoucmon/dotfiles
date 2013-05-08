@@ -1,0 +1,12 @@
+[user]
+	name = Christian Seidl
+	email = seidl@elbdudler.de
+
+[push]
+    default = current
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch

@@ -10,3 +10,5 @@
     ci = commit
     co = checkout
     br = branch
+    ffs = flow feature start
+    fff = flow feature finish

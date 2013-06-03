@@ -10,7 +10,7 @@
     ci = commit
     co = checkout
     br = branch
-    fe = git fetch
-    re = git rebase
+    fe = fetch
+    re = rebase
     ffs = flow feature start
     fff = flow feature finish

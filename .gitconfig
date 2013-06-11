@@ -12,5 +12,7 @@
     br = branch
     fe = fetch
     re = rebase
-    ffs = flow feature start
-    fff = flow feature finish
+    last = log --stat -1
+    list = log --pretty=full
+    f-fs = flow feature start
+    f-ff = flow feature finish

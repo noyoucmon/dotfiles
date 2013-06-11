@@ -2,6 +2,9 @@
 	name = Christian Seidl
 	email = seidl@elbdudler.de
 
+[color]
+    ui = true
+    
 [push]
     default = current
 

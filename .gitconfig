@@ -1,6 +1,6 @@
 [user]
-	name = Christian Seidl
-	email = seidl@elbdudler.de
+    name = Christian Seidl
+    email = seidl@elbdudler.de
 
 [color]
     ui = true
@@ -17,5 +17,5 @@
     re = rebase
     last = log --stat -1
     list = log --pretty=full
-    f-fs = flow feature start
-    f-ff = flow feature finish
+    gf-fs = flow feature start
+    gf-ff = flow feature finish

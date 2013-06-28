@@ -11,12 +11,25 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.cse-custom/.git-flow-completion.zsh
 
+# Java
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" 
+
 # Aliases
 alias h="cd $HOME"
 alias l="ls -lah"
-alias lg="l | grep $1"
+alias lg="l | grep -i $1"
 alias reload="source $HOME/.zshrc"
-alias apre="sudo /usr/sbin/apachectl -e info -k restart"
+
+## Apache
+alias a2on="sudo /usr/sbin/apachectl -e info -k start"
+alias a2off="sudo /usr/sbin/apachectl -e info -k stop"
+alias a2re="sudo /usr/sbin/apachectl -e info -k restart"
+
+## OrientDB
+ORIENTDB_HOME="/usr/local/Cellar/orientdb/1.3.0/libexec"
+alias odb-server-start="sh $ORIENTDB_HOME/bin/server.sh &"
+alias odb-server-stop="sh $ORIENTDB_HOME/bin/shutdown.sh &"
+alias odb-console="sh $ORIENTDB_HOME/bin/console.sh &"
 
 # Paths
 export PATH="/usr/local/Cellar/php54/5.4.14/bin:$PATH"

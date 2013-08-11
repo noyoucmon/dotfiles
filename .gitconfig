@@ -20,3 +20,5 @@
     fff = flow feature finish
     frs = flow release start
     frf = flow release finish
+    fhs = flow hotfix start
+    fhf = flow hotfix finsih

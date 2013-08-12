@@ -1,23 +1,43 @@
+# -------------
+# Files
+# -------------
 .DS_Store
-._*
 .Spotlight-V100
 .Trashes
-.*
-*~
-*.swp
 .AppleDouble
 .LSOverride
 Icon
+._*
+.*
+*~
+.*.sw[a-z]
+*.un~
+*.tmp
+*.bak
+*.swp
+*~.nib
 
+
+# -------------
+# $this
+# -------------
+.gituser
+
+
+# -------------
+# Override
+# -------------
 !.gitignore
 !.htaccess
 
+
+# -------------
+# Basics
+# -------------
 node_modules/
 components/
 .sass-cache
 vendor/
-.*.sw[a-z]
-*.un~
 Session.vim
 nbproject/
 build/
@@ -32,10 +52,6 @@ nb-configuration.xml
 bin/**
 tmp/**
 tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
 local.properties
 .classpath
 .settings/

@@ -1,6 +1,9 @@
 [include]
     path = ~/.gituser
 
+[core]
+    autocrlf = input
+
 [color]
     ui = true
     
@@ -15,10 +18,11 @@
     fe = fetch
     re = rebase
     last = log --stat -1
-    list = log --pretty=full
+    list = log --pretty=fuller
+    info = remote show origin
     ffs = flow feature start
     fff = flow feature finish
     frs = flow release start
     frf = flow release finish
     fhs = flow hotfix start
-    fhf = flow hotfix finsih
+    fhf = flow hotfix finish

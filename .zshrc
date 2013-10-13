@@ -1,5 +1,6 @@
-# oh-my-zsh configuration.
+# oh-my-zsh configuration
 ZSH=$HOME/.oh-my-zsh
+DTF=$HOME/.dotfiles
 
 # Theme
 ZSH_THEME="example"
@@ -9,7 +10,7 @@ plugins=(git)
 
 # Sources
 source $ZSH/oh-my-zsh.sh
-source $HOME/.cse-custom/.git-flow-completion.zsh
+source $HOME/.git-flow-completion.zsh
 
 # Java
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" 
@@ -18,7 +19,7 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 alias h="cd $HOME"
 alias l="ls -lah"
 alias lg="l | grep -i $1"
-alias reload="source $HOME/.zshrc"
+alias reload="source $DTF/.zshrc"
 
 ## Apache
 alias a2on="sudo /usr/sbin/apachectl -e info -k start"
@@ -32,8 +33,8 @@ alias odb-server-stop="sh $ORIENTDB_HOME/bin/shutdown.sh &"
 alias odb-console="sh $ORIENTDB_HOME/bin/console.sh &"
 
 # Paths
-export PATH="/usr/local/Cellar/php54/5.4.14/bin:$PATH"
+export PATH="/usr/local/Cellar/php54/5.4.20/bin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/Users/christianseidl/SDKs/android-sdk-macosx/tools:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH="$HOME/Private/Projects/noyoucmon/shell-tools/bin:$PATH"
+export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"

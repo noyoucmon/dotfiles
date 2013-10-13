@@ -1,12 +1,17 @@
 # -------------
 # Files
 # -------------
+
+## OS X
 .DS_Store
-.Spotlight-V100
-.Trashes
 .AppleDouble
 .LSOverride
 Icon
+._*
+.Spotlight-V100
+.Trashes
+
+
 ._*
 .*
 *~
@@ -36,27 +41,15 @@ Icon
 # -------------
 node_modules/
 components/
-.sass-cache
+.sass-cache/
 vendor/
-Session.vim
-nbproject/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
-*.pydevproject
-.project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-local.properties
-.classpath
-.settings/
-.loadpath
-.externalToolBuilders/
-*.launch
-.cproject
-.buildpath
+
+
+# -------------
+# Zend
+# -------------
+INSTALL.txt
+LICENSE.txt
+README.txt
+demos/
+extras/documentation

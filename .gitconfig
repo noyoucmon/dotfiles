@@ -1,16 +1,26 @@
 [include]
+    # -- include git user data from external file
     path = ~/.gituser
+    # -- include local additions from external file
+    path = ~/.local-additions/git.config
 
 [core]
     autocrlf = input
 
-[color]
-    ui = true
-    
 [push]
     default = current
 
+[color]
+    ui = true
+
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+
+
 [alias]
+    # -- git
     st = status
     ci = commit
     co = checkout
@@ -20,6 +30,9 @@
     last = log --stat -1
     list = log --pretty=fuller
     info = remote show origin
+
+    # -- git-flow
+    gfi = flow init -d
     ffs = flow feature start
     fff = flow feature finish
     frs = flow release start

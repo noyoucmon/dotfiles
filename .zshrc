@@ -43,4 +43,3 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/Users/christianseidl/SDKs/android-sdk-macosx/tools:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
-

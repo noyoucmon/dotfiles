@@ -28,6 +28,10 @@ alias a2off="sudo /usr/sbin/apachectl -e info -k stop"
 alias a2re="sudo /usr/sbin/apachectl -e info -k restart"
 alias a2gfl="sudo /usr/sbin/apachectl -e info -k graceful"
 
+#Nginx
+alias xon="nginx"
+alias xoff="nginx -s stop"
+
 ## OrientDB
 ORIENTDB_HOME="/usr/local/Cellar/orientdb/1.3.0/libexec"
 alias odb-server-start="sh $ORIENTDB_HOME/bin/server.sh &"
@@ -38,8 +42,11 @@ alias odb-console="sh $ORIENTDB_HOME/bin/console.sh &"
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" 
 
 # Paths
-export PATH="/usr/local/Cellar/php54/5.4.20/bin:$PATH"
+export PATH="/usr/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/Cellar/php54/5.4.22/bin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
-export PATH="/Users/christianseidl/SDKs/android-sdk-macosx/tools:$PATH"
+export PATH="$HOME/SDKs/android-sdk-macosx/tools:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"

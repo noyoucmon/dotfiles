@@ -4,7 +4,7 @@ dotfiles
 ## ZSH
 * .zshrc
 
-Symlink your `~/.zshrc` to wherever you cloned `dotfiles/.zshrc` and relaod your zsh config.
+Symlink your `~/.zshrc` to wherever you cloned `dotfiles/.zshrc` and reload your zsh config.
 
 ## Git
 * .gitconfig

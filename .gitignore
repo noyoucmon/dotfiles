@@ -2,7 +2,7 @@
 # Files
 # -------------
 
-## OS X
+## OS
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -10,8 +10,6 @@ Icon
 ._*
 .Spotlight-V100
 .Trashes
-
-
 ._*
 .*
 *~
@@ -19,7 +17,6 @@ Icon
 *.un~
 *.tmp
 *.bak
-*.swp
 *~.nib
 
 
@@ -39,10 +36,10 @@ Icon
 # -------------
 # Basics
 # -------------
-node_modules/
-components/
-.sass-cache/
-vendor/
+**/node_modules/
+**/components/
+**/.sass-cache/
+**/vendor/
 
 
 # -------------

@@ -31,7 +31,9 @@ Icon
 # -------------
 !.gitignore
 !.htaccess
-
+!.zshrc
+!.tmux.conf
+!.vimrc
 
 # -------------
 # Basics
@@ -40,13 +42,3 @@ Icon
 **/components/
 **/.sass-cache/
 **/vendor/
-
-
-# -------------
-# Zend
-# -------------
-INSTALL.txt
-LICENSE.txt
-README.txt
-demos/
-extras/documentation

@@ -71,3 +71,5 @@ export PATH="$BREW/php54/5.4.22/bin:$PATH"
 ## Android SDK
 export PATH="$HOME/SDKs/android-sdk-macosx/tools:$PATH"
 export PATH="$HOME/SDKs/android-sdk-macosx/platform-tools:$PATH"
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

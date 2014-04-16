@@ -1,44 +1,5 @@
-# -------------
-# Files
-# -------------
-
-## OS
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
-._*
-.*
-*~
-.*.sw[a-z]
-*.un~
-*.tmp
-*.bak
-*~.nib
-
-
-# -------------
-# $this
-# -------------
-.gituser
-
-
-# -------------
-# Override
-# -------------
 !.gitignore
-!.htaccess
-!.zshrc
+!.gitignore_global
 !.tmux.conf
 !.vimrc
-
-# -------------
-# Basics
-# -------------
-**/node_modules/
-**/components/
-**/.sass-cache/
-**/vendor/
+!.zshrc

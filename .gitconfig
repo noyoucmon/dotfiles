@@ -1,11 +1,9 @@
 [include]
-    # -- include git user data from external file
-    path = ~/.gituser
-    # -- include local additions from external file
-    path = ~/.local-additions/git.config
+    path = ~/.git_user
 
 [core]
     autocrlf = input
+    excludesfile = ~/.gitignore_global
 
 [push]
     default = current
@@ -18,9 +16,8 @@
     changed = yellow bold
     untracked = red bold
 
-
 [alias]
-    # -- git
+    # git aliases
     st = status
     ci = commit
     co = checkout
@@ -31,7 +28,7 @@
     list = log --pretty=fuller
     info = remote show origin
 
-    # -- git-flow
+    # git-flow aliases
     gfi = flow init -d
     ffs = flow feature start
     fff = flow feature finish

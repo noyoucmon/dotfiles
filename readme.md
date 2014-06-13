@@ -11,10 +11,13 @@ You might have to reload your editor or shell configuration afterwards for the n
 * .gitconfig
 * .gitignore_global
 
-An additional `/.gituser` is expected to exist. this file will hold your git user preferences like name and email address. 
+An additional `/.gituser` is expected to exist. this file will hold your git user preferences like name and email address.
 
 ## tmux
 * .tmux.conf
 
 ## VIM
 * .vimrc
+
+## Misc
+* .editorconfig

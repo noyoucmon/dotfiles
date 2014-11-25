@@ -14,8 +14,8 @@ set showmatch
 set backspace=indent,eol,start
 
 syntax enable
-colorscheme desert
-set background=dark
+colorscheme github
+set background=light
 
 filetype off
 filetype plugin indent on

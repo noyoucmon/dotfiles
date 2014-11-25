@@ -27,6 +27,7 @@
     last = log --stat -1
     list = log --pretty=fuller
     info = remote show origin
+    cfgl = config --list
 
     # git-flow aliases
     gfi = flow init -d

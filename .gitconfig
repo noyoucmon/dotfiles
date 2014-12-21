@@ -21,7 +21,7 @@
     st = status
     ci = commit
     co = checkout
-    br = branch
+    br = branch -av
     fe = fetch
     re = rebase
     last = log --stat -1

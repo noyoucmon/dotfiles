@@ -21,9 +21,15 @@
     st = status
     ci = commit
     co = checkout
+    cb = checkout -b
     br = branch -av
     fe = fetch
+    feo = fetch origin
     re = rebase
+    pl = pull
+    plo = pull origin
+    ps = push
+    pso = push origin
     last = log --stat -1
     list = log --pretty=fuller
     info = remote show origin

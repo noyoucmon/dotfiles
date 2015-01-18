@@ -13,8 +13,6 @@ export LANG=en_US.UTF-8
 ## Plugins
 plugins=(brew bower composer git git-extras git-flow osx tmux)
 
-ZSH_TMUX_AUTOSTART=true
-
 ## Sources
 source $ZSH/oh-my-zsh.sh
 source $HOME/.git-flow-completion.zsh
@@ -29,6 +27,7 @@ setopt NO_BEEP
 
 ## Aliases
 alias h="cd $HOME"
+alias p="cd $HOME/Projects"
 alias l="ls -lah"
 alias lg="l | grep -i $1"
 alias reload="source $HOME/.zshrc"
@@ -59,9 +58,10 @@ export PATH="/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
-export PATH="/usr/local/share/npm/bin:$PATH"
+#export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
 export PATH="$HOME/Dev/protractor/bin:$PATH"
+export PATH="$HOME/.node/bin:$PATH"
 
 ## PHP
 export PATH="$BREW/php54/5.4.35/bin:$PATH"

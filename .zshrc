@@ -4,7 +4,8 @@ BREW=/usr/local/Cellar
 
 ## Theme
 #ZSH_THEME="candy"
-ZSH_THEME="mrtazz"
+#ZSH_THEME="mrtazz"
+ZSH_THEME="amuse"
 
 ## Locale
 export LC_ALL=en_US.UTF-8
@@ -61,7 +62,6 @@ export PATH="/usr/local/mysql/bin:$PATH"
 #export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
 export PATH="$HOME/Dev/protractor/bin:$PATH"
-export PATH="$HOME/.node/bin:$PATH"
 
 ## PHP
 export PATH="$BREW/php54/5.4.35/bin:$PATH"

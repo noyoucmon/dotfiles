@@ -1,0 +1,12 @@
+{
+    "boss":      true,
+    "strict":    true,
+    "newcap":    false,
+    "undef":     true,
+    "unused":    true,
+    "camelcase":   true,
+    "lastsemic": true,
+    "globals": {
+        "jQuery": true
+    }
+}

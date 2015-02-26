@@ -21,3 +21,4 @@ An additional `/.gituser` is expected to exist. This file will hold your git use
 
 ## Misc
 * .editorconfig
+* .jshintrc

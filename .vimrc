@@ -14,19 +14,16 @@ set showmatch
 set backspace=indent,eol,start
 
 syntax enable
-colorscheme github
 set background=light
 
 filetype off
 filetype plugin indent on
 filetype plugin on
 au FileType php set omnifunc=phpcomplete#CompletePHP
-let php_sql_query=1                                                                                        
+let php_sql_query=1
 let php_htmlInStrings=1
 
-execute pathogen#infect()
-
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 Bundle "gmarik/vundle"
 Bundle "mattn/emmet-vim"

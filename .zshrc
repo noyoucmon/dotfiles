@@ -6,7 +6,7 @@ ZSH_THEME="mrtazz"
 
 # Constants
 BREW_HOME=/usr/local/Cellar
-ORIENTDB_HOME="/usr/local/Cellar/orientdb/2.0.8/libexec"
+ORIENTDB_HOME="/usr/local/Cellar/orientdb/2.1.0/libexec"
 
 # Locale
 export LC_ALL=en_US.UTF-8
@@ -48,7 +48,7 @@ alias xre="sudo nginx -s reload"
 alias xoff="sudo nginx -s stop"
 
 ## PHP
-export PATH="$BREW_HOME/php55/5.5.24/bin:$PATH"
+export PATH="$BREW_HOME/php55/5.5.28/bin:$PATH"
 alias fpmon="launchctl load -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php55.plist"
 alias fpmoff="launchctl unload -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php55.plist"
 

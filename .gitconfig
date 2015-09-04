@@ -22,21 +22,19 @@
     ci = commit
     co = checkout
     cb = checkout -b
+    cod = checkout develop
+    com = checkout master
     br = branch -av
     fe = fetch
-    feo = fetch origin
-    re = rebase
     pl = pull
-    plo = pull origin
     ps = push
-    pso = push origin
-    last = log --stat -1
-    list = log --pretty=fuller
+    log-last = log --stat -1
+    log-list = log --pretty=fuller
     info = !git branch -av && git remote -v
-    cfgl = config --list
+    conflicts-list = diff --name-only --diff-filter=U
 
     # git-flow aliases
-    gfi = flow init -d
+    fin = flow init -d
     ffs = flow feature start
     fff = flow feature finish
     frs = flow release start

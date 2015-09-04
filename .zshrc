@@ -13,13 +13,13 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Plugins
-plugins=(BREW_HOME bower composer git git-extras git-flow osx tmux)
+plugins=(brew bower composer git git-extras git-flow osx tmux)
 
-# Sources
+# Includes
 source $ZSH/oh-my-zsh.sh
 source $HOME/.git-flow-completion.zsh
 
-# Custom includes
+# Custom local includes
 source $HOME/.projectsrc
 
 # Options and settings
@@ -28,18 +28,10 @@ bindkey "^E" end-of-line
 bindkey -v
 setopt NO_BEEP
 
-# Functions
-## Switch the SSH directory to change keys on the fly
-function switch-ssh {
-    echo "Switching SSH directory"
-    mv ~/.ssh ~/.ssh_tmp && mv ~/.ssh_alt ~/.ssh && mv ~/.ssh_tmp ~/.ssh_alt
-    echo "New SSH Key is:"
-    ssh-keygen -l -f ~/.ssh/id_rsa
-}
-
 # General aliases
 alias h="cd $HOME"
 alias p="cd $HOME/Projects"
+alias d="cd $HOME/Develop"
 alias l="ls -lah"
 alias lg="l | grep -i $1"
 alias reload="source $HOME/.zshrc"
@@ -51,12 +43,12 @@ alias a2re="sudo /usr/sbin/apachectl -e info -k restart"
 alias a2gfl="sudo /usr/sbin/apachectl -e info -k graceful"
 
 # Nginx
-alias xon="nginx"
-alias xre="nginx -s reload"
-alias xoff="nginx -s stop"
+alias xon="sudo nginx"
+alias xre="sudo nginx -s reload"
+alias xoff="sudo nginx -s stop"
 
 ## PHP
-export PATH="$BREW_HOME/php54/5.5.24/bin:$PATH"
+export PATH="$BREW_HOME/php55/5.5.24/bin:$PATH"
 alias fpmon="launchctl load -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php55.plist"
 alias fpmoff="launchctl unload -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php55.plist"
 
@@ -72,13 +64,14 @@ alias odb-console="sh $ORIENTDB_HOME/bin/console.sh &"
 # node.js
 export PATH="$HOME/.node/bin:$PATH"
 
-## Paths
+## /bin paths
 export PATH="/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/lib:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 
-# Custom Paths
+# Custom local paths
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
 export PATH="$HOME/Develop/tools/bin:$PATH"

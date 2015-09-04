@@ -72,6 +72,6 @@ export PATH="/usr/local/lib:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 
 # Custom local paths
-export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
 export PATH="$HOME/Develop/tools/bin:$PATH"
+

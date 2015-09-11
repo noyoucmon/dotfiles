@@ -49,8 +49,8 @@ alias xoff="sudo nginx -s stop"
 
 ## PHP
 export PATH="$BREW_HOME/php55/5.5.28/bin:$PATH"
-alias fpmon="launchctl load -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php55.plist"
-alias fpmoff="launchctl unload -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php55.plist"
+alias fpmon="launchctl load -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php56.plist"
+alias fpmoff="launchctl unload -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php56.plist"
 
 # MySQL
 alias myon="mysql.server start"
@@ -74,4 +74,3 @@ export PATH="/usr/local/mysql/bin:$PATH"
 # Custom local paths
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
 export PATH="$HOME/Develop/tools/bin:$PATH"
-

@@ -48,7 +48,7 @@ alias xre="sudo nginx -s reload"
 alias xoff="sudo nginx -s stop"
 
 ## PHP
-export PATH="$BREW_HOME/php55/5.5.28/bin:$PATH"
+export PATH="$BREW_HOME/php55/5.6.12/bin:$PATH"
 alias fpmon="launchctl load -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php56.plist"
 alias fpmoff="launchctl unload -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php56.plist"
 

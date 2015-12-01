@@ -1,23 +1,21 @@
 # oh-my-zsh
 ZSH=$HOME/.oh-my-zsh
 
-# Theme
-ZSH_THEME="mrtazz"
+# ZSH Theme
+ZSH_THEME="bullet-train"
 
-# Constants
+# Paths
 BREW_HOME=/usr/local/Cellar
-ORIENTDB_HOME="/usr/local/Cellar/orientdb/2.1.0/libexec"
 
 # Locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Plugins
-plugins=(brew bower composer git git-extras git-flow osx tmux)
+plugins=(brew bower composer git git-extras git-flow osx tmux git-flow-completion)
 
 # Includes
 source $ZSH/oh-my-zsh.sh
-source $HOME/.git-flow-completion.zsh
 
 # Custom local includes
 source $HOME/.projectsrc
@@ -28,7 +26,7 @@ bindkey "^E" end-of-line
 bindkey -v
 setopt NO_BEEP
 
-# General aliases
+# Basic aliases
 alias h="cd $HOME"
 alias p="cd $HOME/Projects"
 alias d="cd $HOME/Develop"
@@ -48,21 +46,18 @@ alias xre="sudo nginx -s reload"
 alias xoff="sudo nginx -s stop"
 
 ## PHP
-export PATH="$BREW_HOME/php55/5.6.12/bin:$PATH"
-alias fpmon="launchctl load -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php56.plist"
-alias fpmoff="launchctl unload -w ~/Library/LaunchAgents/homeBREW_HOME-php.josegonzalez.php56.plist"
+export PATH="$BREW_HOME/php55/5.6.16/bin:$PATH"
 
 # MySQL
 alias myon="mysql.server start"
 alias myoff="mysql.server stop"
 
-# OrientDB
-alias odb-server-start="sh $ORIENTDB_HOME/bin/server.sh &"
-alias odb-server-stop="sh $ORIENTDB_HOME/bin/shutdown.sh &"
-alias odb-console="sh $ORIENTDB_HOME/bin/console.sh &"
-
 # node.js
 export PATH="$HOME/.node/bin:$PATH"
+
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 ## /bin paths
 export PATH="/usr/bin:$PATH"
@@ -73,4 +68,24 @@ export PATH="/usr/local/mysql/bin:$PATH"
 
 # Custom local paths
 export PATH="$HOME/.noyoucmon/shell-tools/bin:$PATH"
-export PATH="$HOME/Develop/tools/bin:$PATH"
+
+# jenv
+export PATH="$HOME/.jenv/shims:$PATH"
+source "$BREW_HOME/jenv/0.4.3/libexec/libexec/../completions/jenv.zsh"
+jenv rehash 2>/dev/null
+export JENV_LOADED=1
+unset JAVA_HOME
+jenv() {
+  typeset command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  enable-plugin|rehash|shell|shell-options)
+    eval `jenv "sh-$command" "$@"`;;
+  *)
+    command jenv "$command" "$@";;
+  esac
+}

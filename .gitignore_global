@@ -14,14 +14,16 @@ Thumbs.db
 *.tmp
 *.bak
 *.log
-*.sublime-project
-*.sublime-workspace
 
 !.gitignore
+!.gitmodules
+!.jshintrc
 !.editorconfig
+!.babelrc
+!.csscomb.json
 
-**/node_modules/
-**/bower_components/
-**/vendor/
-**/.sass-cache/
-**/nbproject/
+node_modules/
+bower_components/
+vendor/
+.sass-cache/
+nbproject/

@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "lint": {
+      "no-multiple-toplevel-headings": true,
+      "no-consecutive-blank-lines": true,
+      "list-item-indent": false,
+      "maximum-line-length": 120
+    }
+  },
+  "settings": {
+    "bullet": "-"
+  }
+}

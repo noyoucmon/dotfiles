@@ -17,10 +17,6 @@ Thumbs.db
 
 !.gitignore
 !.gitmodules
-!.jshintrc
-!.editorconfig
-!.babelrc
-!.csscomb.json
 
 node_modules/
 bower_components/

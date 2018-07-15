@@ -39,11 +39,6 @@ filetype off
 filetype plugin indent on
 filetype plugin on
 
-" PHP
-au FileType php set omnifunc=phpcomplete#CompletePHP
-let php_sql_query=1
-let php_htmlInStrings=1
-
 " NERDTree
 map <F1> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1

@@ -24,8 +24,6 @@
     ci = commit
     co = checkout
     cb = checkout -b
-    cod = checkout develop
-    com = checkout master
     br = branch
     fe = fetch
     log-last = log --stat -1

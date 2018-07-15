@@ -1,7 +1,7 @@
 # dotfiles
 
 Symlink your `~/.whatever-config-file` to wherever you cloned `dotfiles/.whatever-config-file`.
-You might have to reload your editor or shell configuration afterwards for the new configuration to take effect.
+You might want to reload your editor or shell configuration afterwards for the new configuration to take effect.
 Also, be sure to back up your original config files before overwriting or deleting them.
 
 ## ZSH
@@ -13,7 +13,7 @@ Also, be sure to back up your original config files before overwriting or deleti
 - .gitconfig
 - .gitignore_global
 
-An additional `/.gituser` is expected to exist in `~/`, hhold your git user configuration like name and email address.
+An additional `/.gituser` holding your Git user configuration like name and email address is expected to exist in `~/`.
 
 ## tmux
 
@@ -26,10 +26,10 @@ An additional `/.gituser` is expected to exist in `~/`, hhold your git user conf
 
 ## JavaScript
 
-- .babelrc
 - .eslintrc
 - .jshintrc
 
 ## Misc
 
 - .remarkrc
+- .prettierrc

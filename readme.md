@@ -23,6 +23,7 @@ An additional `/.gituser` holding your Git user configuration like name and emai
 
 - .editorconfig
 - .vimrc
+- .vscode/
 
 ## JavaScript
 

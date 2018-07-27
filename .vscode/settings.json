@@ -1,0 +1,17 @@
+{
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "eslint.trace.server": "messages",
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "vs-seti"
+}

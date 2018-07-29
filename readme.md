@@ -29,6 +29,7 @@ An additional `/.gituser` holding your Git user configuration like name and emai
 
 - .eslintrc
 - .jshintrc
+- tslint.json
 
 ## Misc
 
